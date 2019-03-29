@@ -1,0 +1,81 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #313131;
+    box-shadow: 1px 1px 1px #313131;
+    position: sticky;
+    top: 0;
+
+    .left{
+        float: left;
+    }
+
+    .right{
+        float: right;
+    }    
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 24px;
+        padding: 10px 20px;
+        height: 70px;
+        line-height: 50px;        
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline-block;           
+        
+            &:hover>ul{
+                animation-name: showList;
+                animation-duration: 0.3s;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+            }
+
+            a:hover{
+                animation-name: colorSwitch;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+            }
+
+            ul{
+                opacity: 0;
+
+                height: auto;
+
+                li{
+                    display: block;
+                    background-color: #313131;
+                    height: auto;
+                    text-align: center;
+
+                    a{                        
+                        font-size: 16px;
+                        display: block;
+                        padding: 0;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+@keyframes colorSwitch{
+    from{background-color: #313131;}
+    to{background-color: #3f3f3f;}
+}
+
+@keyframes showList{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

@@ -1,0 +1,28 @@
+.tweet{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto 20px auto;
+    border-radius: 4px;
+    min-width: 400px;
+    max-width: 600px;
+
+    small{
+        color: rgb(151, 151, 151);
+
+        a{
+            text-decoration: none;
+            color: #313131;
+        }
+    }
+
+    hr{
+        margin: 2px 0;
+    }
+
+    button{
+        margin-top: 2px;
+    }
+
+    
+}

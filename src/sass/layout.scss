@@ -1,0 +1,20 @@
+.message{
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    user-select: none;
+    margin: 10px 0;
+
+    &.error{
+        border-color: rgb(219, 32, 32);
+        background-color: rgb(247, 137, 137);
+    }
+
+    &.normal{
+        border-color: rgb(6, 184, 6);
+        background-color: rgb(139, 235, 139);
+    }
+}
+

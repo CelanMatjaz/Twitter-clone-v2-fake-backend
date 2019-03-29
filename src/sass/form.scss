@@ -1,0 +1,60 @@
+form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 100px 60px;
+    width: 660px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &>*{
+        outline: none;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    input, textarea{
+        width: 100%;
+        padding: 10px 10px 4px 4px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border: 0 solid lightgray;
+        border-bottom-width: 2px;
+
+        &:focus{
+            border-color: #313131;
+        }
+    }
+
+    textarea{
+        resize: none;
+        border: 1px solid lightgray;
+        height: 200px;
+        border-radius: 4px;
+        margin-bottom: 0;
+        background-color: #fcfcfc;
+        padding: 4px;
+        font-size: 16px;
+    }   
+}
+
+button{
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 3px;
+    margin-top: 20px;
+
+    &:hover{
+        background-color: rgb(124, 124, 124);
+        color: white;
+    }
+
+    &:active{
+        background-color: #313131;
+        color: white;
+    }
+}
